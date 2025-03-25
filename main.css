@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png');
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-size: cover; /* Để hình nền bao phủ toàn bộ màn hình */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Main content styling */
+main {
+    padding: 40px 20px;
+}
+
+/* Food section */
+.food-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.food-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Food card container */
+.food-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* General styling for each food card */
+.food-card {
+    width: 23%; /* 4 cards per row */
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for each food card */
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+/* Title styling inside food card */
+.food-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling inside food card */
+.food-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Styling for images inside food cards */
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .food-card {
+        width: 48%; /* 2 cards per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .food-card {
+        width: 100%; /* 1 card per row */
+    }
+}
+
+/* About section */
+.about-section {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact section */
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Container for layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
